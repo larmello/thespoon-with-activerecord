@@ -1,0 +1,9 @@
+<h1>Check our restaurants!</h1>
+
+  <% @restaurants.each do |restaurant| %>
+    <p> Id: <strong><%=restaurant.id %></strong> </p>
+    <p> Name: <%= link_to restaurant.name, restaurant_path(restaurant) %> </p>
+    <p> Rating: <%= restaurant.rating %> </p>
+    <br>
+  <% end -%>
+
